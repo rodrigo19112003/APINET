@@ -1,0 +1,46 @@
+GET http://localhost:3000/api/movies
+
+###
+
+GET http://localhost:3000/api/movies?s=Dun
+
+###
+
+GET http://localhost:3000/api/movies/16
+
+###
+
+POST http://localhost:3000/api/movies
+Content-Type: application/json
+
+{
+    "title": "Masacre en Texas",
+    "synopsis": "Un grupo de jóvenes se pierde en Texas y termina encontrándose con asesinos dementes que los persiguen con motosierras",
+    "year": 1999
+}
+
+###
+
+POST http://localhost:3000/api/movies
+Content-Type: application/json
+
+{
+    "title": "Saw X",
+    "synopsis": "John Kramer conoce a una persona que le promete curarle el cáncer en una clínica de la Ciudad de México. Tras descubrir",
+    "year": 2023
+}
+
+###
+
+POST http://localhost:3000/api/movies
+Content-Type: application/json
+
+{
+    "title": "El muñeco diabólico",
+    "synopsis": "Mediante un ritual de vudú, el alma de un asesino moribundo trasmigra a un muñeco. Una madre compra el muñeco para su hijo",
+    "year": 1988
+}
+
+###
+
+DELETE http://localhost:3000/api/movies/16
